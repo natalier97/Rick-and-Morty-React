@@ -45,6 +45,7 @@ function Characters() {
         return (
           <div id="cards-container" className="h-50 mb-5">
             <Cards
+              id={character.id}
               imgURL={character.image}
               name={character.name}
               episode={character.episode}
@@ -52,6 +53,7 @@ function Characters() {
               species={character.species}
               location={character.location}
               url={character.url}
+              key={character.id}
             />
           </div>
         );

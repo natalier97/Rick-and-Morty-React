@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Characters from "./pages/Characters";
 import AboutPage from "./pages/AboutPage";
 import NotFound from "./pages/NotFound";
+import CharacterDetails from "./pages/CharacterDetailsPage";
 
 
 const router = createBrowserRouter([
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
         path: '/',
         //render this component
         element: <App />,
+        errorElement: <NotFound />,
         children:[
             {
                 // index -- this is the first thing u see
@@ -19,15 +21,19 @@ const router = createBrowserRouter([
                 element: <HomePage />
             },
             {
-                path: 'characters/',
+                path: '/characters/',
                 element: <Characters />
             },
             {
                 path: 'about/',
                 element: <AboutPage />
+            },
+            {
+                path: '/characters/:id/',
+                element: <CharacterDetails />
             }
         ],
-        errorElement: <NotFound />
+        
     },
 
 ]);

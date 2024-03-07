@@ -24,7 +24,7 @@ function Cards ({imgURL, name, episode, status, species, location, url}) {
           </Card.Link>
         </Card.Body>
       </Card>
-    );
+    );cd 
 };
 
 export default Cards;

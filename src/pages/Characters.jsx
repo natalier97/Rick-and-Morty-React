@@ -43,7 +43,7 @@ function Characters() {
       // need to map through results and render card for each char on page
       data.map((character) => {
         return (
-          <div id="cards-container" className="h-50 mb-5">
+          <div key={character.id} id="cards-container" className="h-50 mb-5">
             <Cards
               id={character.id}
               imgURL={character.image}

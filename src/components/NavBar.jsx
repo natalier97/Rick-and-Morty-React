@@ -12,6 +12,7 @@ function NavBar() {
         <Link to="/">Home Page</Link>
         <Link to="characters/">Characters</Link>
         <Link to="about/">About Page</Link>
+        <Link to="favorites/">Favorites</Link>
       </div>
     </nav>
   );
